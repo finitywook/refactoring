@@ -37,3 +37,7 @@
 ### [Combine Methods Into Class(여러 메서드를 클래스로 묶기)](src/basic/CombineMethodsIntoClass.java)
 
 > 메서드 호출 시 매개변수로 전달되는 공통 데이터를 중심으로 긴밀하게 엮여 작동하는 메서드 목록이 있다면, 클래스 하나로 묶는다. 클래스로 묶으면 이 함수들이 공유하는 공통 환경을 더 명확하게 표현할 수 있다.
+
+### [Combine Methods Into Transform(여러 메서드를 변환 메서드로 묶기)](src/basic/CombineMethodsIntoTransform.java)
+
+> 메서드 호출 시 매개변수로 전달되는 공통 데이터를 중심으로 긴밀하게 엮여 작동하는 메서드 목록이 있다면, 클래스 하나로 묶는다. 클래스로 묶으면 이 함수들이 공유하는 공통 환경을 더 명확하게 표현할 수 있다.
