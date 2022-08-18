@@ -53,3 +53,7 @@
 ### [Encapsulate Collection(컬렉션 캡슐화하기)](src/encapsulate/EncapsulateCollection.java)
 
 > 컬렉션을 직접 변경할 수 있으면 눈치채지 못하는 곳에서 컬렉션의 원소들이 바뀔 수 있다. 이러한 문제를 방지하기 위해 컬렉션을 변경하는 메서드를 만든다.
+
+### [Replace Primitive With Object(기본형을 객체로 바꾸기)](src/encapsulate/ReplacePrimitiveWithObject.java)
+
+> 단순한 출력 이상의 기능이 필요해지는 순간 그 데이터를 표현하는 전용 클래스를 정의하자. 나중에 특별한 동작이 필요해지면, 이 클래스에 추가하면 되니 프로그램이 커질수록 점점 유용한 도구가 된다.
