@@ -104,3 +104,7 @@
 ### [Move Statements Into Method(문장을 메서드로 옮기기)](src/move/MoveStatementsIntoMethod.java)
 
 > 중복 제거는 코드를 건강하게 한다. 이렇게 해두면 추후 반복되는 부분에서 무언가를 수정할 때 단 한곳만 수정하면 된다.
+
+### [Move Statements To Callers(문장을 호출한 곳으로 옮기기)](src/move/MoveStatementsToCallers.java)
+
+> 초기에는 응집도가 높았던 메서드가 어느새 둘 이상의 다른 일을 수행하도록 바뀔 수 있다. 개발자는 동작이 달라진 함수에서 꺼내 해당 호출자로 옮겨줘야 한다.
