@@ -175,8 +175,15 @@
 
 ## 5. 조건부 로직 간소화
 
-### [Decompose Conditional(조건분 분해하기)](src/simplifying/DecomposeConditional.java)
+### [Decompose Conditional(조건문 분해하기)](src/simplifying/DecomposeConditional.java)
 
 > 복잡한 조건부 로직은 프로그램을 복잡하게 만드는 가장 흔한 원흉에 속한다.
 > 긴 함수는 그 자체로 읽기도 어렵지만, 조건문은 그 어려움을 한층 더 가중시킨다. 조건을 검사하고 그 결과에 따른 동작을 표현한 코드는 무슨일이 일어나는지는 말해주지만, 왜 일어나는지는 말해주지 않을 때가 많다.
 > 거대한 코드 블록이 주어지면 코드를 부위별로 분해 한 다음 코드 덩어리를 각 의도를 살린 함수의 호출로 바꾸자, 무엇을 분기했는지가 명백해진다.
+
+### [Consolidate Conditional Expression(조건식 통합하기)](src/simplifying/ConsolidateConditionalExpression.java)
+
+> 비교하는 조건은 다르지만 그 결과로 수행하는 동작은 똑같은 코드들이 더러 있는데 어차피 같은 일을 할 거라면 조건 검사도 하나로 통합하자.
+> 여러 조각으로 나뉜 조건들을 하나로 통합함으로써 내가 하려는 일이 명확해진다.
+> 또한, 통합하면 함수 추출하기까지 이어질 가능성이 매우 높다.  
+> 하지만, 같은 결과를 반환하더라도 독립적인 비교 조건인 경우 조건식을 통합해서는 안된다.
