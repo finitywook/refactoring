@@ -212,3 +212,10 @@
 ### [Replace Control Flag With Break(제어 플래그를 탈출문으로 바꾸기)](src/simplifying/ReplaceControlFlagWithBreak.java)
 
 > 제어 플래그는 코드의 동작을 변경하는 데 사용하는 변수를 의미한다. 이런 코드는 리팩터링으로 충분히 간소화가 가능하다. 제어 플래그의 주 서식지는 반복문 안이다. return을 하나로만 사용하려고 하거나, break, continue 사용이 익숙하지 않은 사람이 심어놓기도 한다.
+> 
+## 6. API 리팩터링
+
+### [Separate Query From Modifier(질의 함수와 변경 함수 분리하기)](src/api/SeparateQueryFromModifier.java)
+
+> 외부에서 관찰할 수 있는 겉보기 부수 효과가 전혀 없이 값을 반환해주는 함수를 추구해야 한다. 이런 함수는 어느 때건 원하는 만큼 호출해도 아무 문제가 없다. 호출하는 문장의 위치를 어디로든 옮겨도 되고 테스트 하기도 쉽낟.
+> 겉보기 부수 효과가 있는 함수와 없는 함수는 명확히 구분하는 것이 좋다. 이를 위한 방법이 '질의 함수는 모두 부수효과가 없어야 한다'라는 규칙을 따르는 것 이다. 이를 명령-질의 분리(Commend-Query Separation)라고 한다.
